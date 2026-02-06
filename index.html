@@ -2,146 +2,180 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Preethini ❤️ Vigneash</title>
+<title>For Preethini ❤️</title>
 
-<style>  
-body {
-    margin: 0;
-    min-height: 100vh;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+<style>
+body{
+  margin:0;
+  min-height:100vh;
+  font-family:'Comic Sans MS', cursive, sans-serif;
+  background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+  cursor:crosshair;
 }
 
 /* Floating doodles */
-.doodle {
-    position: absolute;
-    font-size: 28px;
-    animation: float 6s infinite ease-in-out;
-    opacity: 0.85;
+.doodle{
+  position:absolute;
+  font-size:30px;
+  opacity:0.85;
+  animation:float 6s ease-in-out infinite;
 }
-
-@keyframes float {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-25px); }
-    100% { transform: translateY(0); }
+@keyframes float{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-30px)}
 }
 
 /* Card */
-.card {
-    background: white;
-    width: 340px;
-    padding: 22px;
-    border-radius: 24px;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
-    text-align: center;
-    position: relative;
-    z-index: 2;
+.card{
+  background:white;
+  width:360px;
+  padding:26px;
+  border-radius:28px;
+  text-align:center;
+  box-shadow:0 18px 40px rgba(0,0,0,0.3);
+  animation:pop 1s ease;
+}
+@keyframes pop{
+  from{transform:scale(0.85);opacity:0}
+  to{transform:scale(1);opacity:1}
 }
 
-/* Doodle couple */
-.couple {
-    font-size: 70px;
-    margin-bottom: 10px;
+.couple{
+  font-size:78px;
+  animation:beat 1.5s infinite;
+}
+@keyframes beat{
+  0%,100%{transform:scale(1)}
+  50%{transform:scale(1.1)}
 }
 
-/* Text */
-h2 {
-    color: #e6005c;
-    margin-bottom: 6px;
+h2{
+  color:#e6005c;
+  margin:10px 0;
 }
 
-p {
-    font-size: 15px;
-    line-height: 1.45;
+/* Message animation */
+.message span{
+  display:block;
+  opacity:0;
 }
+.message span:nth-child(1){animation:fade 1s 0.5s forwards}
+.message span:nth-child(2){animation:fade 1s 1.6s forwards}
+.message span:nth-child(3){animation:fade 1s 2.7s forwards}
+.message span:nth-child(4){animation:fade 1s 3.8s forwards}
+.message span:nth-child(5){animation:fade 1s 4.9s forwards}
+@keyframes fade{to{opacity:1}}
 
-/* Buttons */
-.buttons {
-    margin-top: 16px;
+.buttons{margin-top:18px}
+button{
+  border:none;
+  padding:12px 24px;
+  margin:6px;
+  border-radius:26px;
+  font-size:15px;
+  cursor:pointer;
 }
+#yesBtn{background:#e6005c;color:white}
+#noBtn{background:#ddd;color:#333;position:relative}
 
-button {
-    border: none;
-    padding: 10px 20px;
-    font-size: 15px;
-    border-radius: 22px;
-    cursor: pointer;
-    margin: 6px;
+/* Cursor sparkles */
+.spark{
+  position:fixed;
+  pointer-events:none;
+  animation:fall 1s linear;
 }
-
-#yesBtn {
-    background: #e6005c;
-    color: white;
-}
-
-#noBtn {
-    background: #ddd;
-    color: #333;
-    position: relative;
+@keyframes fall{
+  to{transform:translateY(20px);opacity:0}
 }
 </style>
 </head>
 
 <body>
 
-<!-- Background doodles -->
-<div class="doodle" style="top:8%; left:12%;">❤️</div>
-<div class="doodle" style="top:18%; right:10%;">✨</div>
-<div class="doodle" style="top:35%; left:6%;">🌹</div>
-<div class="doodle" style="bottom:20%; right:12%;">💖</div>
-<div class="doodle" style="bottom:10%; left:15%;">⭐</div>
+<!-- Doodles -->
+<div class="doodle" style="top:6%;left:10%">❤️</div>
+<div class="doodle" style="top:18%;right:8%">✨</div>
+<div class="doodle" style="top:42%;left:6%">🌹</div>
+<div class="doodle" style="bottom:18%;right:12%">💖</div>
+<div class="doodle" style="bottom:8%;left:14%">⭐</div>
+<div class="doodle" style="top:55%;right:5%">💫</div>
 
 <div class="card">
+  <div class="couple">🧑🏽‍❤️‍🧑🏽</div>
 
-    <!-- Doodle couple -->
-    <div class="couple">🧑🏽‍❤️‍🧑🏽</div>
+  <h2>Hey Thangamey 💛</h2>
 
-    <h2>Dear Preethini 💕</h2>
+  <div class="message">
+    <span>Will you be my Valentine, <b>Preethini</b>? 💌</span>
+    <span>I love you for a zillion times, Thangamey 💛</span>
+    <span>I know I am cracky sometimes 😅</span>
+    <span>But still… I believe we would make a really good couple 💕</span>
+    <span>நீ என் வாழ்க்கையில வந்தது என் அதிர்ஷ்டம் 🌸</span>
+  </div>
 
-    <p>
-        Even when we can’t meet,<br>
-        my heart finds its way to you 🌹<br><br>
-        So I made this little doodle world for us ✨
-    </p>
+  <div class="buttons">
+    <button id="yesBtn" onclick="yes()">YES 💖</button>
+    <button id="noBtn" onclick="nope()">NO 🙈</button>
+  </div>
 
-    <p><b>Will you be my Valentine?</b> 💌</p>
-
-    <div class="buttons">
-        <button id="yesBtn" onclick="yesClicked()">YES 💕</button>
-        <button id="noBtn" onclick="noClicked()">NO 🙈</button>
-    </div>
-
-    <p style="margin-top:16px;">
-        — Always yours,<br>
-        <b>Vigneash</b> ❤️
-    </p>
+  <p style="margin-top:18px">
+    — Always yours,<br><b>Vigneash</b> ❤️
+  </p>
 </div>
 
+<!-- 🎵 Romantic background music (royalty-free) -->
+<audio autoplay loop>
+  <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_1a4d90d4a7.mp3" type="audio/mpeg">
+</audio>
+
 <script>
-function yesClicked() {
-    alert("YAY!!! ❤️💖\nYou just made my whole world brighter 🌹✨");
+function yes(){
+  confetti();
+  alert("YAYYYY!!! ❤️💖🌹\nYou just made my whole world brighter ✨");
 }
 
-let messages = [
-    "Hey 😜 NO is not allowed!",
-    "Oops 🙈 try again… maybe YES?",
-    "Nice try 😏 but my heart says YES ❤️",
-    "This button doesn’t believe in NO 💕"
+const msgs=[
+  "Hey 😜 NO is not allowed!",
+  "Oops 🙈 try YES ❤️",
+  "Nice try 😏 but my heart says YES!",
+  "This button doesn’t believe in NO 💕"
 ];
-
-function noClicked() {
-    const msg = messages[Math.floor(Math.random() * messages.length)];
-    alert(msg);
-
-    const btn = document.getElementById("noBtn");
-    btn.style.position = "absolute";
-    btn.style.left = Math.random() * 220 + "px";
-    btn.style.top = Math.random() * 220 + "px";
+function nope(){
+  alert(msgs[Math.floor(Math.random()*msgs.length)]);
+  const b=document.getElementById("noBtn");
+  b.style.left=Math.random()*260+"px";
+  b.style.top=Math.random()*220+"px";
 }
+
+/* Confetti */
+function confetti(){
+  for(let i=0;i<40;i++){
+    const c=document.createElement("div");
+    c.innerText="💖";
+    c.style.position="fixed";
+    c.style.left=Math.random()*100+"vw";
+    c.style.top="-10px";
+    c.style.fontSize="20px";
+    c.style.animation="fall 3s linear";
+    document.body.appendChild(c);
+    setTimeout(()=>c.remove(),3000);
+  }
+}
+
+/* Cursor sparkles */
+document.addEventListener("mousemove",e=>{
+  const s=document.createElement("div");
+  s.className="spark";
+  s.innerText="✨";
+  s.style.left=e.clientX+"px";
+  s.style.top=e.clientY+"px";
+  document.body.appendChild(s);
+  setTimeout(()=>s.remove(),800);
+});
 </script>
 
 </body>
